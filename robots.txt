@@ -1,4 +1,351 @@
+# =============================================================================
+# robots.txt | Mr. Fantasy Portfolio
+# Technical SEO + AIO + GIO Optimized
+# AI Bot Friendly (Perplexity, ChatGPT, Gemini, Claude, Grok, Bing AI)
+# Last Updated: 2026-06-10
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# SITEMAP DECLARATION
+# -----------------------------------------------------------------------------
 Sitemap: https://puriprabhat-a11y.github.io/Mr.-Fantasy-/sitemap.xml
+Sitemap: https://puriprabhat-a11y.github.io/Mr.-Fantasy-/sitemap-index.xml
+
+# =============================================================================
+# SECTION 1: GOOGLE BOTS (GIO Compliant)
+# =============================================================================
+
+User-agent: Googlebot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Allow: /sitemap-index.xml
+Allow: /robots.txt
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.vpn/
+Disallow: /.gitignore
+Disallow: /.gitattributes
+Disallow: /LICENSE
+Disallow: /README.md
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+Allow: /assets/
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Googlebot-News
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Googlebot-Video
+Allow: /
+Allow: /assets/
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+# =============================================================================
+# SECTION 2: PERPLEXITY AI (AIO Compliant)
+# Allows Perplexity to read and cite your portfolio in AI answers
+# =============================================================================
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Allow: /robots.txt
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.env
+Disallow: /.env.local
+
+# =============================================================================
+# SECTION 3: OPENAI / CHATGPT (AIO Compliant)
+# GPTBot = GPT training crawler
+# ChatGPT-User = ChatGPT Browse with Bing live browsing agent
+# OAI-SearchBot = ChatGPT Search (SearchGPT) crawler
+# =============================================================================
+
+User-agent: GPTBot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /sitemap.xml
+Allow: /robots.txt
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.env
+Disallow: /.env.local
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /.git/
+
+User-agent: OAI-SearchBot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# =============================================================================
+# SECTION 4: MICROSOFT BING + BING AI / COPILOT
+# =============================================================================
+
+User-agent: Bingbot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /sitemap.xml
+Allow: /robots.txt
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.env
+
+User-agent: msnbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# =============================================================================
+# SECTION 5: ANTHROPIC CLAUDE (AIO Compliant)
+# ClaudeBot = Claude AI training crawler
+# Claude-SearchBot = Claude real-time search agent
+# =============================================================================
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /.git/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# =============================================================================
+# SECTION 6: GOOGLE GEMINI / BARD
+# =============================================================================
+
+User-agent: Google-Extended
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /.git/
+
+# =============================================================================
+# SECTION 7: META AI
+# =============================================================================
+
+User-agent: meta-externalagent
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# =============================================================================
+# SECTION 8: xAI GROK
+# =============================================================================
+
+User-agent: Grok
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+User-agent: xAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# =============================================================================
+# SECTION 9: OTHER SEARCH ENGINES
+# =============================================================================
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /.git/
+
+User-agent: Yahoo! Slurp
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# =============================================================================
+# SECTION 10: GLOBAL FALLBACK - All Other Crawlers
+# Covers any new or unlisted bots not specified above
+# =============================================================================
+
 User-agent: *
 Allow: /
-Allow: /*
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /projects/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Allow: /sitemap-index.xml
+Allow: /robots.txt
+
+# --- UNSAFE CHECKPOINTS (Block always, all bots) ---
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.vpn/
+
+# --- BLOCK NON-INDEXABLE FILE TYPES ---
+Disallow: /.gitignore
+Disallow: /.gitattributes
+Disallow: /LICENSE
+Disallow: /README.md
+
+# =============================================================================
+# CRAWL-DELAY (Optional — only for aggressive crawlers)
+# GitHub Pages can handle standard crawl rates; remove if causing issues
+# =============================================================================
+# User-agent: *
+# Crawl-delay: 1
+
+# =============================================================================
+# END OF robots.txt
+# Mr. Fantasy Portfolio | puriprabhat-a11y.github.io
+# Technical SEO + AIO + GIO Optimized | 2026-06-10
+# =============================================================================
