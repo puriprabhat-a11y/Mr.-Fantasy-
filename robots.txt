@@ -1,4 +1,3 @@
-- --- -
 # === GOOGLE ===
 User-agent: Googlebot
 Allow: /
