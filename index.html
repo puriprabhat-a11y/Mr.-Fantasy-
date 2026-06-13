@@ -362,34 +362,58 @@ footer {
   display: flex; align-items: center; justify-content: center;
   max-width: 320px;
 }
-.about-portrait-inner {
-  width: 140px; height: 140px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display); font-size: 4rem; color: #fff;
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5rem;
+  align-items: center;
 }
-  .about-portrait-inner img {
+
+.about-portrait {
+  aspect-ratio: 3 / 4;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  max-width: 320px;
+}
+
+.about-portrait-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 58px;
+  overflow: hidden;
+}
+
+.about-portrait-inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
 }
-.about-portrait-bar {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  background: var(--ink); padding: 1rem 1.25rem;
-}
-.about-portrait-bar .name { color: var(--bg); font-weight: 600; }
-.about-portrait-bar .role { color: rgba(240,237,232,0.5); font-size: 0.8rem; }
 
-.skill-section { margin-top: 3rem; }
-.skill-group { margin-bottom: 2.5rem; }
-.skill-group-title { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
-.skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.skill-pill {
-  padding: 0.4rem 0.9rem; border: 1px solid var(--border);
-  border-radius: 100px; font-size: 0.8rem; font-weight: 500; color: var(--ink-soft);
-  background: var(--bg-2); transition: all var(--transition);
+.about-portrait-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--ink);
+  padding: 1rem 1.25rem;
+  z-index: 2;
+}
+
+.about-portrait-bar .name {
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.about-portrait-bar .role {
+  color: rgba(240,237,232,0.5);
+  font-size: 0.8rem;
 }
 .skill-pill:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 
