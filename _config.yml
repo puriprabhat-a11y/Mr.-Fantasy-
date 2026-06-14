@@ -6,7 +6,6 @@ baseurl: "/Mr-Fantasy/"
 # PERFORMANCE & SEO PLUGINS
 # ============================================================
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-compress-html
 
